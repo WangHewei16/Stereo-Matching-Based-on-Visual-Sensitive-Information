@@ -1,1 +1,0 @@
-﻿D:\王赫唯\2021寒假\CV 论文\模型\Census\Census\Census.vcxproj(37,5): error MSB4019: 找不到导入的项目“D:\王赫唯\2021寒假\opencv2.4.9属性表\opencv249_debug.props”。请确认 Import 声明“..\..\..\..\opencv2.4.9属性表\opencv249_debug.props”中的表达式正确，且文件位于磁盘上。
