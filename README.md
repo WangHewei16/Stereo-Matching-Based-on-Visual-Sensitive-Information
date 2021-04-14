@@ -3,10 +3,24 @@
 * `./Table Code/`: This folder contains the test code in middlebury. It will produce the information data of the proposed algorithm in `Table1.png` and `Table2.png`. I use opencv 2.4.8, other versions should be OK but not too low.
 
 ## Data
-* `./Data/`: This folder contains the data folder contains Tsukuba, Venus, Teddy and cones datasets from Middlebury official test datasets.
+* `./Data/`: This folder contains the data folder contains Tsukuba, Venus, Teddy and cones datasets from Middlebury official test datasets. The current directory images.xml is the input item, it will read the contents of the file. In the previous directory../sample/test_images, the image in the images directory is the input item and the name is the same as the name in images.xml correspondingly. The output results are saved in the result directory under the current directory.
 * `./Data_extended/`: This folder contains 27 data sets from Middlebury official test datasets. 
 
-These two data sets includes test data and disparity map which are standard images.
+Firstly, open Error_Non_31.sln in vs2012.
+
+Secondly, Configure opencv (I use opencv 2.4.8, other versions should be OK, but not too low)
+
+Thirdly  What user need to do is put the disparity map you get into the corresponding folder. 
+For example, Tsukuba's parallax maps are named tsukuba_dis.ppm , and put it in D:\Error_Non_31\Data\tsukuba.
+The prefixes of Venus, Teddy and cones are same as Tsukuba. The other 27 stereo matching pairs were put in the corresponding folder in D:\Error_Non_31\Data_extended\Aloe folder.
+For example, Aloe is named:_Aloe.ppm Put in D:\Error_Non_31\Data_extended\Aloe folder
+
+Fourthly, the prefixes and suffixes (image format) of all parallax maps can be modified, but for convenience, it is not recommended to modify the program. 
+As for image format conversion, I use XnConvert software to convert images among .pgm, .ppm, .png formats.
+
+Fifthly, after testing the error rate, check the folder of the corresponding path (e.g. D:\Error_Non_31\Data\tsukuba) can get the image of the error rate of the non occluded area, in which the error pixels of the non occluded area are marked in red. The error rate is consistent with the non occluded error rate.
+
+* These two data sets includes test data and disparity map which are standard images.
 
 ## Figure
 * `./Figure1.png`: This figure shows the comparison of different test results. The first column is the perspective image in the original image of the experimental data set, the second column is the ideal parallax image for reference, the third and fourth columns are the result images obtained by the classical algorithm census, and the fifth and sixth columns are stereo matching algorithms based on visual sensitive information. Among them, the red marks in the fourth and sixth columns indicate the mismatching areas of the marks when comparing the two result maps with the ideal disparity map. Through the display of subjective images, we can clearly see that the proposed algorithm can effectively calculate and generate the disparity of the original image, and the matching effect is better than that of the classical algorithm. 
