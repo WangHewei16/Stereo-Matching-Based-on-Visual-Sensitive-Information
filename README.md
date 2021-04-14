@@ -5,7 +5,8 @@
 ## Data
 * `./Data/`: This folder contains the data folder contains Tsukuba, Venus, Teddy and cones datasets from Middlebury official test datasets.
 * `./Data_extended/`: This folder contains 27 data sets from Middlebury official test datasets. 
-/These two data sets includes test data and disparity map which are standard images.
+
+These two data sets includes test data and disparity map which are standard images.
 
 ## Figure
 * `./Figure1.png`: This figure shows the comparison of different test results. The first column is the perspective image in the original image of the experimental data set, the second column is the ideal parallax image for reference, the third and fourth columns are the result images obtained by the classical algorithm census, and the fifth and sixth columns are stereo matching algorithms based on visual sensitive information. Among them, the red marks in the fourth and sixth columns indicate the mismatching areas of the marks when comparing the two result maps with the ideal disparity map. Through the display of subjective images, we can clearly see that the proposed algorithm can effectively calculate and generate the disparity of the original image, and the matching effect is better than that of the classical algorithm. 
