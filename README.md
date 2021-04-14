@@ -1,8 +1,6 @@
 ## Code
-* `./model/`: This folder contains Census model code.
-* `./model add smoothing filtering/`: This folder contains the model code which add a soothing filter based on the Cencus model.
-
-98% codes are written in C++, 2% codes are written in C. Codes are written in Visual Studio 2013. The environment of OpenCV is 2.4.9. 
+* `./Figure Code/`: This folder contains Census model code which can produce the `./Figure1.png` after running. It should run in vs2012 + pcl1.8.0 + boost environment.
+* `./Table Code/`: This folder contains the test code in middlebury. I use opencv 2.4.8, other versions should be OK, but not too low.
 
 ## Data
 * `./Part 1-4 test data set and disparity map/`: This folder contains test data and disparity map which are standard images from Middlebury official test datasets.
