@@ -5,12 +5,13 @@
 ## Data
 * `./Data/`: This folder contains the data folder contains Tsukuba, Venus, Teddy and cones datasets from Middlebury official test datasets. The current directory images.xml is the input item, it will read the contents of the file. In the previous directory../sample/test_images, the image in the images directory is the input item and the name is the same as the name in images.xml correspondingly. The output results are saved in the result directory under the current directory.
 * `./Data_extended/`: This folder contains 27 data sets from Middlebury official test datasets. 
+* This is the process of using this code: 
 
 Firstly, open Error_Non_31.sln in vs2012.
 
 Secondly, Configure opencv (I use opencv 2.4.8, other versions should be OK, but not too low)
 
-Thirdly  What user need to do is put the disparity map you get into the corresponding folder. 
+Thirdly, users need to do is put the disparity map you get into the corresponding folder. 
 For example, Tsukuba's parallax maps are named tsukuba_dis.ppm , and put it in D:\Error_Non_31\Data\tsukuba.
 The prefixes of Venus, Teddy and cones are same as Tsukuba. The other 27 stereo matching pairs were put in the corresponding folder in D:\Error_Non_31\Data_extended\Aloe folder.
 For example, Aloe is named:_Aloe.ppm Put in D:\Error_Non_31\Data_extended\Aloe folder
