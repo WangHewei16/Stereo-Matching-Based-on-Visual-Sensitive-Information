@@ -1,9 +1,18 @@
+# Stereo Matching Based on Visual Sensitive Information
+
+With the spirit of reproducible research, this repository contains codes required to produce the results in the manuscript:
+
+> H. Wang, M. S. Pathan, and S. Dev, Stereo Matching Based on Visual Sensitive Information, *6th IEEE International Conference on Image, Vision and Computing (ICIVC)*, 2021.
+
+Please cite the above paper if you intent to use whole/part of the code. This code is only for academic and research purposes.
+
+
 ## Code
 * `./Figure Code/`: This folder contains Census model code which can produce the `Figure1.png` after running. It should run in vs2012 + pcl1.8.0 + boost environment.
 * `./Table Code/`: This folder contains the test code in middlebury. It will produce the information data of the proposed algorithm in `Table1.png` and `Table2.png`. I use opencv 2.4.8, other versions should be OK but not too low.
 
 ## Data
-* `./Data/`: This folder contains the data folder contains Tsukuba, Venus, Teddy and cones datasets from Middlebury official test datasets. The current directory images.xml is the input item, it will read the contents of the file. In the previous directory../sample/test_images, the image in the images directory is the input item and the name is the same as the name in images.xml correspondingly. The output results are saved in the result directory under the current directory.
+* `./Data/`: This folder contains the data folder contains Tsukuba, Venus, Teddy and cones datasets from Middlebury official test datasets. The current directory `images.xml` is the input item, it will read the contents of the file. In the previous directory `./sample/test_images`, the image in the images directory is the input item and the name is the same as the name in `images.xml` correspondingly. The output results are saved in the result directory under the current directory.
 * `./Data_extended/`: This folder contains 27 data sets from Middlebury official test datasets. 
 
 This is the process of using this code: 
@@ -18,7 +27,7 @@ The prefixes of Venus, Teddy and cones are same as Tsukuba. The other 27 stereo 
 For example, Aloe is named:_Aloe.ppm Put in D:\Error_Non_31\Data_extended\Aloe folder
 
 Fourthly, the prefixes and suffixes (image format) of all parallax maps can be modified, but for convenience, it is not recommended to modify the program. 
-As for image format conversion, I use XnConvert software to convert images among .pgm, .ppm, .png formats.
+As for image format conversion, we use XnConvert software to convert images among .pgm, .ppm, .png formats.
 
 Fifthly, after testing the error rate, check the folder of the corresponding path (e.g. D:\Error_Non_31\Data\tsukuba) can get the image of the error rate of the non occluded area, in which the error pixels of the non occluded area are marked in red. The error rate is consistent with the non occluded error rate.
 
