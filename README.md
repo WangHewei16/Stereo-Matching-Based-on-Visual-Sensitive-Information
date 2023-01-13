@@ -29,9 +29,7 @@ For example, Aloe is named:_Aloe.ppm Put in D:\Error_Non_31\Data_extended\Aloe f
 Fourthly, the prefixes and suffixes (image format) of all parallax maps can be modified, but for convenience, it is not recommended to modify the program. 
 As for image format conversion, we use XnConvert software to convert images among .pgm, .ppm, .png formats.
 
-Fifthly, after testing the error rate, check the folder of the corresponding path (e.g. D:\Error_Non_31\Data\tsukuba) can get the image of the error rate of the non occluded area, in which the error pixels of the non occluded area are marked in red. The error rate is consistent with the non occluded error rate.
-
-* These two data sets includes test data and disparity map which are standard images.
+Fifthly, after testing the error rate, check the folder of the corresponding path (e.g. D:\Error_Non_31\Data\tsukuba) can get the image of the error rate of the non occluded area, in which the error pixels of the non occluded area are marked in red. The error rate is consistent with the non occluded error rate. Reminding that these two data sets includes test data and disparity map which are standard images.
 
 ## Figure
 * `./Figure1.png`: This figure shows the comparison of different test results. The first column is the perspective image in the original image of the experimental data set, the second column is the ideal parallax image for reference, the third and fourth columns are the result images obtained by the classical algorithm census, and the fifth and sixth columns are stereo matching algorithms based on visual sensitive information. Among them, the red marks in the fourth and sixth columns indicate the mismatching areas of the marks when comparing the two result maps with the ideal disparity map. Through the display of subjective images, we can clearly see that the proposed algorithm can effectively calculate and generate the disparity of the original image, and the matching effect is better than that of the classical algorithm. 
